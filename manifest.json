@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Chat to Obsidian",
+  "version": "1.0",
+  "description": "Export chat content to Obsidian notes",
+  "permissions": ["activeTab", "downloads", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Export chat log"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
